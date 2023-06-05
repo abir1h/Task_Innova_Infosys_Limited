@@ -5,8 +5,11 @@ import 'dart:math';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:task_inova/Screens/ChartsPage/ChartView.dart';
+import 'package:task_inova/Screens/LampPage/LampView.dart';
 
 import '../../Utils/Colors.dart';
+import '../SmartPage/SmartView.dart';
 import 'HomeView.dart';
 
 
@@ -21,9 +24,9 @@ class _Main_homeState extends State<Main_home> {
   int _selectedIndex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
     HomeView(),
-    Container(),
-    Container(),
-    Container(),
+    Lampview(),
+    ChartView(),
+    SmartView(),
 
   ];
 
