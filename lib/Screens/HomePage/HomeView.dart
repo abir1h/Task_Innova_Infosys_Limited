@@ -217,7 +217,83 @@ class HomeView extends GetView<HomeController> {
              ),
               )
            ],
-         )
+         ),
+           Padding(
+             padding: const EdgeInsets.all(8.0),
+             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Rooms",style: TextStyle(
+                  color: AppColors.mainColor,fontWeight: FontWeight.w800,fontSize: 18
+                ),), Text("See All",style: TextStyle(
+                  color: AppColors.mainColor,fontWeight: FontWeight.w800,fontSize: 18
+                ),),
+              ],
+          ),
+           ),
+          Container(
+            width: size.width,
+            height: size.height/3.8,
+            child: ListView.builder(
+             itemCount: controller.Rooms.length,
+               shrinkWrap: true,
+               scrollDirection: Axis.horizontal,
+
+               itemBuilder: (_,index){
+             return  Padding(
+               padding: const EdgeInsets.all(8.0),
+               child: Container(
+                 width: size.width/2.5,
+                 height: size.height/3.8,
+                 decoration: BoxDecoration(
+                     borderRadius: BorderRadius.circular(15),
+                     color: AppColors.listbg
+                 ),
+                 child: Column(
+                   crossAxisAlignment: CrossAxisAlignment.start,
+                   children: [
+
+                     Padding(
+                       padding: const EdgeInsets.all(8.0),
+                       child: Container(
+                         decoration: BoxDecoration(
+                           borderRadius: BorderRadius.circular(8),
+                           color: AppColors.mainColor,
+                         ),child: Padding(
+                           padding: const EdgeInsets.all(3.0),
+                           child: Text(controller.Rooms[index]['Temp'],style: TextStyle(color: Colors.white),),
+                         ),
+                       ),
+                     ),
+                     Center(
+                       child: Image.asset(controller.Rooms[index]['Image'],height: 100,width: 100,),
+                     ),
+                     Center(child: Text(controller.Rooms[index]['Title'],style: TextStyle(color: Colors.black,fontWeight: FontWeight.w700,fontSize: 20),),)
+                     ,  Padding(
+                       padding: const EdgeInsets.all(8.0),
+                       child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                         children: [
+                           Container(
+                             decoration: BoxDecoration(
+                               color: AppColors.yellow,
+                               borderRadius: BorderRadius.circular(5),
+
+                             ),child: Padding(
+                               padding: const EdgeInsets.all(8.0),
+                               child: Text(controller.Rooms[index]['Devices'],style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600,fontSize: 12),),
+                             ),
+                           ),
+                           Text("   Devices",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600,fontSize: 14))
+                         ],
+                       ),
+                     )
+                   ],
+                 ),
+               ),
+             );
+
+         }),
+          )
         ],
       )
 

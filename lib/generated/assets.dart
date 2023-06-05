@@ -15,9 +15,13 @@ class Assets {
   static const String fontsPoppinsMedium = 'Assets/fonts/Poppins-Medium.ttf';
   static const String fontsUbuntuBold = 'Assets/fonts/Ubuntu-Bold.ttf';
   static const String fontsUbuntuMedium = 'Assets/fonts/Ubuntu-Medium.ttf';
+  static const String imagesAc = 'Assets/Images/ac.png';
+  static const String imagesBedroom = 'Assets/Images/bedroom.png';
   static const String imagesCloud1 = 'Assets/Images/cloud1.png';
   static const String imagesDrop = 'Assets/Images/drop.png';
   static const String imagesEye = 'Assets/Images/eye.png';
+  static const String imagesLamp = 'Assets/Images/lamp.png';
+  static const String imagesLeaving = 'Assets/Images/leaving.png';
   static const String imagesSun = 'Assets/Images/sun.png';
   static const String imagesTopbar = 'Assets/Images/topbar.png';
   static const String imagesWind = 'Assets/Images/wind.png';
