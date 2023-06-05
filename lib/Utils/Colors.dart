@@ -7,5 +7,6 @@ class AppColors {
   static const Color listbg = const Color(0xFFd8e4e8);
   static const Color listbg2 = const Color(0xFF9a7265);
   static const Color yellow = const Color(0xFFffe266);
+  static const Color bglamp = const Color(0xFFd8e4e8);
 
 }

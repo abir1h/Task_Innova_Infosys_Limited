@@ -42,6 +42,7 @@ dependencies:
   get: ^4.6.5
   bottom_navy_bar: ^6.0.0
   flutter_svg: ^1.1.6
+  im_stepper: ^1.0.1+1
   lite_rolling_switch: ^1.0.1
 
 dev_dependencies:
@@ -100,4 +101,5 @@ flutter:
     - Assets/Images/
     - Assets/fonts/
     - Assets/Images/sun.png
+    - Assets/Images/lmp.png
 

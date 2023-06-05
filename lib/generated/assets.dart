@@ -2,6 +2,7 @@
 class Assets {
   Assets._();
 
+  static const String assetsImagesLmp = 'Assets/Images/lmp.png';
   static const String assetsImagesSun = 'Assets/Images/sun.png';
   static const String fontsInterBlack = 'Assets/fonts/Inter-Black.ttf';
   static const String fontsInterBold = 'Assets/fonts/Inter-Bold.ttf';
@@ -20,8 +21,12 @@ class Assets {
   static const String imagesCloud1 = 'Assets/Images/cloud1.png';
   static const String imagesDrop = 'Assets/Images/drop.png';
   static const String imagesEye = 'Assets/Images/eye.png';
+  static const String imagesGlow = 'Assets/Images/glow.png';
+  static const String imagesHighlight = 'Assets/Images/highlight.png';
   static const String imagesLamp = 'Assets/Images/lamp.png';
   static const String imagesLeaving = 'Assets/Images/leaving.png';
+  static const String imagesLmp = 'Assets/Images/lmp.png';
+  static const String imagesLowlight = 'Assets/Images/lowlight.png';
   static const String imagesSun = 'Assets/Images/sun.png';
   static const String imagesSw = 'Assets/Images/sw.png';
   static const String imagesTopbar = 'Assets/Images/topbar.png';

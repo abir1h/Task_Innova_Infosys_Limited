@@ -8,6 +8,8 @@ import 'package:lite_rolling_switch/lite_rolling_switch.dart';
 import 'package:task_inova/Screens/HomePage/HomeController.dart';
 import 'package:task_inova/Utils/Colors.dart';
 
+import '../LampPage/LampView.dart';
+
 
 
 class HomeView extends GetView<HomeController> {
@@ -370,56 +372,61 @@ class HomeView extends GetView<HomeController> {
                   ),SizedBox(width: 10,),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      width: size.width/2.2,
-                      height: size.height/5,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: AppColors.listbg2
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              Image.asset('Assets/Images/lamp.png',height:80,width: 100,),
-                              Expanded(
-                                child: Column(
-                                  children: [
-                                    Text("Color",style: TextStyle(color: Colors.white),),
-                                    Text("White",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w700),),
-                                  ],
+                    child: InkWell(
+                      onTap:(){
+                        Get.to(()=>Lampview());
+                      },
+                      child: Container(
+                        width: size.width/2.2,
+                        height: size.height/5,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: AppColors.listbg2
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Image.asset('Assets/Images/lamp.png',height:80,width: 100,),
+                                Expanded(
+                                  child: Column(
+                                    children: [
+                                      Text("Color",style: TextStyle(color: Colors.white),),
+                                      Text("White",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w700),),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("Lamp",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w600,fontSize: 16),),
+                                      Text("Living Room",style: TextStyle(color: Colors.white,fontWeight: FontWeight.normal,fontSize: 14),),
+                                    ],
+                                  ),
                                 ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text("Lamp",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w600,fontSize: 16),),
-                                    Text("Living Room",style: TextStyle(color: Colors.white,fontWeight: FontWeight.normal,fontSize: 14),),
-                                  ],
+                                Expanded(
+                                  child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Image.asset("Assets/Images/sw.png",height: 50,width: 70,)
+                                  ),
                                 ),
-                              ),
-                              Expanded(
-                                child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Image.asset("Assets/Images/sw.png",height: 50,width: 70,)
-                                ),
-                              ),
-                            ],
-                          )
+                              ],
+                            )
 
 
 
 
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   )
