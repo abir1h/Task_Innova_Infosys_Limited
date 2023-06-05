@@ -121,20 +121,21 @@ class HomeView extends GetView<HomeController> {
 
                              ),
                                        child: Padding(
-                                         padding: const EdgeInsets.all(2.0),
+                                         padding: const EdgeInsets.all(5.0),
                                          child: Column(
                                            crossAxisAlignment: CrossAxisAlignment.start,
                                            children: [
-                                             Row(
+                                             Row(mainAxisAlignment: MainAxisAlignment.center,                                               crossAxisAlignment: CrossAxisAlignment.end,
+
                                                children: [
                                                  CircleAvatar(
                                                    backgroundColor: Colors.white,
-                                                   radius: 15,child: Image.asset("Assets/Images/drop.png",height: 20,width: 20,),
+                                                   radius: 12,child: Image.asset("Assets/Images/drop.png",height: 20,width: 20,),
                                                  ),SizedBox(width: 10,),Text("97",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w700,fontSize: 20),),
                                                  Text("%",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w700,fontSize: 14),)
                                                ],
                                              ),SizedBox(height: 5,),
-                                             Text("Humidty")
+                                              Center(child: Text(" Humidty"))
                                            ],
                                          ),
                                        ),
@@ -146,25 +147,26 @@ class HomeView extends GetView<HomeController> {
                                      padding: const EdgeInsets.all(5.0),
                                      child: Container(
                                        decoration:BoxDecoration(
-                                         color: AppColors.container_colors2,
-                                         borderRadius: BorderRadius.circular(15)
+                                           color: AppColors.container_colors2,
+                                           borderRadius: BorderRadius.circular(15)
 
-                             ),
+                                       ),
                                        child: Padding(
-                                         padding: const EdgeInsets.all(2.0),
+                                         padding: const EdgeInsets.all(5.0),
                                          child: Column(
                                            crossAxisAlignment: CrossAxisAlignment.start,
                                            children: [
-                                             Row(
+                                             Row(mainAxisAlignment: MainAxisAlignment.center,
+                                               crossAxisAlignment: CrossAxisAlignment.end,
                                                children: [
                                                  CircleAvatar(
                                                    backgroundColor: Colors.white,
-                                                   radius: 15,child: Image.asset("Assets/Images/drop.png",height: 20,width: 20,),
-                                                 ),SizedBox(width: 10,),Text("97",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w700,fontSize: 20),),
-                                                 Text("%",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w700,fontSize: 14),)
+                                                   radius: 12,child: Image.asset("Assets/Images/eye.png",height: 20,width: 20,),
+                                                 ),SizedBox(width: 10,),Text("7",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w700,fontSize: 20),),
+                                                 Text("km",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w700,fontSize: 14),)
                                                ],
                                              ),SizedBox(height: 5,),
-                                             Text("Humidty")
+                                             Center(child: Text(" Visibilty"))
                                            ],
                                          ),
                                        ),
@@ -176,32 +178,32 @@ class HomeView extends GetView<HomeController> {
                                      padding: const EdgeInsets.all(5.0),
                                      child: Container(
                                        decoration:BoxDecoration(
-                                         color: AppColors.container_colors2,
-                                         borderRadius: BorderRadius.circular(15)
+                                           color: AppColors.container_colors2,
+                                           borderRadius: BorderRadius.circular(15)
 
-                             ),
+                                       ),
                                        child: Padding(
-                                         padding: const EdgeInsets.only(left: 10.0),
+                                         padding: const EdgeInsets.all(5.0),
                                          child: Column(
                                            crossAxisAlignment: CrossAxisAlignment.start,
                                            children: [
-                                             Row(
+                                             Row(mainAxisAlignment: MainAxisAlignment.center,                                               crossAxisAlignment: CrossAxisAlignment.end,
+
                                                children: [
                                                  CircleAvatar(
                                                    backgroundColor: Colors.white,
-                                                   radius: 15,child: Image.asset("Assets/Images/drop.png",height: 20,width: 20,),
-                                                 ),SizedBox(width: 10,),Text("97",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w700,fontSize: 20),),
-                                                 Text("%",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w700,fontSize: 14),)
+                                                   radius: 12,child: Image.asset("Assets/Images/wind.png",height: 20,width: 20,),
+                                                 ),SizedBox(width: 10,),Text("3",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w700,fontSize: 20),),
+                                                 Text("km/h",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w700,fontSize: 14),)
                                                ],
                                              ),SizedBox(height: 5,),
-                                             Text("Humidty")
+                                             Center(child: Text(" NE Wind"))
                                            ],
                                          ),
                                        ),
                                      ),
                                    ),
                                  ),
-
 
 
                                ],
