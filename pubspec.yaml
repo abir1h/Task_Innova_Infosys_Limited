@@ -40,6 +40,8 @@ dependencies:
   shared_preferences: ^2.0.15
   cached_network_image: ^3.2.0
   get: ^4.6.5
+  bottom_navy_bar: ^6.0.0
+  flutter_svg: ^1.1.6
 
 dev_dependencies:
   flutter_test:
@@ -96,4 +98,5 @@ flutter:
   assets:
     - Assets/Images/
     - Assets/fonts/
+    - Assets/Images/sun.png
 

@@ -2,6 +2,7 @@
 class Assets {
   Assets._();
 
+  static const String assetsImagesSun = 'Assets/Images/sun.png';
   static const String fontsInterBlack = 'Assets/fonts/Inter-Black.ttf';
   static const String fontsInterBold = 'Assets/fonts/Inter-Bold.ttf';
   static const String fontsInterExtraBold = 'Assets/fonts/Inter-ExtraBold.ttf';
@@ -14,5 +15,11 @@ class Assets {
   static const String fontsPoppinsMedium = 'Assets/fonts/Poppins-Medium.ttf';
   static const String fontsUbuntuBold = 'Assets/fonts/Ubuntu-Bold.ttf';
   static const String fontsUbuntuMedium = 'Assets/fonts/Ubuntu-Medium.ttf';
+  static const String imagesCloud1 = 'Assets/Images/cloud1.png';
+  static const String imagesDrop = 'Assets/Images/drop.png';
+  static const String imagesEye = 'Assets/Images/eye.png';
+  static const String imagesSun = 'Assets/Images/sun.png';
+  static const String imagesTopbar = 'Assets/Images/topbar.png';
+  static const String imagesWind = 'Assets/Images/wind.png';
 
 }

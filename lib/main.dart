@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'Screens/HomePage/HomeView.dart';
+import 'Screens/HomePage/MainHome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.teal,
           fontFamily: 'Inter'
       ),
-      home:HomeView(),
+      home:Main_home(indexof: 0,),
       // home:SplashScreen(),
     );
   }
