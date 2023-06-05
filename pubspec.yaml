@@ -42,6 +42,7 @@ dependencies:
   get: ^4.6.5
   bottom_navy_bar: ^6.0.0
   flutter_svg: ^1.1.6
+  lite_rolling_switch: ^1.0.1
 
 dev_dependencies:
   flutter_test:
